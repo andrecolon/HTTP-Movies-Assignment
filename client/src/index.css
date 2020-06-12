@@ -5,15 +5,27 @@ body {
   background-color: #f2f2f2;
 }
 
+a {text-decoration: none;}
+
+
+.movie-list {
+display: flex;
+flex-direction: row;
+flex-flow:  wrap;
+}
+
 .movie-card {
-  background-color: #fff;
+  background-color: #8db5b7;
+  color: white;
+  text-decoration: none;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 1rem;
   cursor: pointer;
   position: relative;
-  margin: 1rem auto;
+  margin: 2rem;
+  width: 100%;
 }
 
 .movie-director {
@@ -74,4 +86,31 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+input {
+    width: 300px;
+    padding: 1rem;
+}
+.form-group {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 400px;
+}
+.md-button.form-button {
+    width: 300px;
+    padding: 1rem;
+    background-color: darkseagreen;
+}
+
+.update-button:hover {
+    background-color: green;
+    color: white;
+}
+.update-button {
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    background-color: rgb(28, 214, 208);
 }
